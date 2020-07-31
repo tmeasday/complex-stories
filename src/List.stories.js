@@ -7,6 +7,7 @@ import { Unchecked } from './ListItem.stories';
 export default {
   title: 'List',
   component: List,
+  subcomponents: { ListItem },
 };
 
 const Template = ({ items, ...args }) => (

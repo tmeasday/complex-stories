@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function ListItem({ title, checked }) {
   return (
@@ -7,3 +8,8 @@ export default function ListItem({ title, checked }) {
     </li>
   );
 }
+
+ListItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  checked: PropTypes.bool,
+};
